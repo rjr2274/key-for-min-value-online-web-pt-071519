@@ -3,9 +3,9 @@
 
 def key_for_min_value(name_hash)
   smallest = 10000000
-  name_hash.collect do |key, value|
+  name_hash.collect do |name, value|
     if value < smallest
-      smallest = key
+      smallest = name
     end
   end
   smallest
